@@ -1,0 +1,61 @@
+<h1>So you want to code?</h1>
+
+<p>Here is a compiled list of tips and resources for those who have started to learn coding but now want to take it to the next level and start thinking about software design and architecture. This is a very short introduction to get you started. There are more resources (free and otherwise) than I could possibly list here. And Software Engineering is a discipline that requires constant dedication to continuous learning and improvement.</p>
+
+<p>For the veterans in the field, please feel free to leave your own tips and thoughts in the comments. This list is by no means comprehensive and we can all learn something from each other.</p>
+<h3>Define "Good"</h3>
+
+<p> 1.	It Works - Does it meet the known requirements for functionality, security, and performance? </p>
+<p> 2.	Maintainability - How difficult is it to make changes -- to add or modify features? </p>
+<p> 3.	Readability - Can someone who didn't write the code understand what's going on? </p>
+<p> 4.	Reusablity - Can single blocks of code (functions, classes, etc.) be used again for similar purposes? </p>
+<p> 5.	Testability - Can you quickly locate the cause of a bug or determine if a change in one area has not broken anything elsewhere? </p>
+<p> 6.	Scalability - How difficult would it be to adjust the system handle a lot more users and/or transactions than originally expected? </p>
+
+<p>That said, achieving all of these goals isn't as easy as one might think. Here are some common tools and techniques available.</p>
+
+
+<h2>Layered Architecture</h2>
+
+<p>For small applications, a single assembly or package is fine. But for larger projects this can get unmanageable rather quickly. A common and useful way to logically separate application logic is through a layered architecture. A good, simple intro to this concept can be found here: <a rel="noreferrer nofollow" target="_blank" href="http://fewagainstmany.com/blog/introduction-to-layered-architecture-part-one">http://fewagainstmany.com/blog/introduction-to-layered-architecture-part-one</a> and a deeper treatment can be found here: <a rel="noreferrer nofollow" target="_blank" href="https://msdn.microsoft.com/en-us/library/ee658109.aspx">https://msdn.microsoft.com/en-us/library/ee658109.aspx</a>. There are also entire categories of books devoted to the subject from publishers like O'Reilly and Addison-Wesley.</p>
+
+<h2>Design Patterns</h2>
+
+<p>Design patterns are basically common solutions to common problems. Some of them are so common even seasoned developers didn't realize there was a name for them. Others are fairly abstruse or are more applicable to specific platforms.  The best place to start with design patterns is the reference section of http://dofactory.com/reference. If you're really brave, you can start with the original "Gang-of-Four" book: <a rel="noreferrer nofollow" target="_blank" href="http://www.amazon.com/exec/obidos/ISBN=0201633612/portlandpatternrA/">http://www.amazon.com/exec/obidos/ISBN=0201633612/portlandpatternrA/</a></p>
+<h2>S.O.L.I.D.</h2>
+
+
+<p>Good software is like deodorant: SOLID and DRY. Now that we've gotten that pun out of the way, what is SOLID? Well, it's actually 5 related principles in object-oriented software design that help ensure the ongoing viability of a large code base.  You can look at Wikipedia's article here: https://en.wikipedia.org/wiki/SOLID_(object-oriented_design) or check out a more down-to-earth explanation here: <a rel="noreferrer nofollow" target="_blank" href="https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design"/>https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design"/</a>.  The gist (and I'm paraphrasing heavily) is this:</p>
+
+<p>Single Responsibility Principle = each class has one job</p>
+
+<p>Open/Closed Principle = you can add stuff to classes, but don't change what's already there</p>
+
+<p>Liskov's Substitution Principle (my favorite) = if a class acts a certain way, all of it's derived classes should act the same way</p>
+
+<p>Interface Segregation = smaller is better; don't add anything unnecessary to an interface</p>
+
+<p>Dependency Inversion = depend on interfaces instead of concrete classes</p>
+
+<h2>Domain Driven Design</h2>
+
+<p>All software exists to create a solution to a problem in the real world. (Here "problem" can be used loosely, as in the there's-no-app-to-wash-my-car problem.) To be a useful solution to a problem, the software has to do a good job of modelling the problem domain -- that is, the real people, objects, actions, and rules that the software is meant to address. DDD is a process of designing software by focusing on that problem domain as the core of system and then building software components around it.</p>
+
+<p>The best resource I've personally seen for DDD is an .NET book "Architecting Applications for the Enterprise" by Dino Esposito: <a rel="noreferrer nofollow" target="_blank" href="http://www.amazon.com/Microsoft-NET-Architecting-Applications-Enterprise/dp/0735685355">http://www.amazon.com/Microsoft-NET-Architecting-Applications-Enterprise/dp/0735685355</a>. There's also a few resources on the web, like this one: <a rel="noreferrer nofollow" target="_blank" href="https://archfirst.org/domain-driven-design/">https://archfirst.org/domain-driven-design/</a>.</p>
+
+<h2>Test-Driven Development</h2>
+
+<p>TDD is a practice of writing code by first writing a "unit test" that you expect that code to satisfy. A unit test is just another block of code that verifies the accuracy of production code. The general goal of TDD is to start each new piece of code with a test that the production code is expected to pass. The added benefit here is that you now have a unit test that can be run at any time to verify that your code still works, say after making a seemingly unrelated change elsewhere. There's lots of information about TDD on the web, but this article here: <a rel="noreferrer nofollow" target="_blank" href="http://code.tutsplus.com/tutorials/the-newbies-guide-to-test-driven-development--net-13835">http://code.tutsplus.com/tutorials/the-newbies-guide-to-test-driven-development--net-13835</a> seems to be a good introduction.</p>
+
+<h2>Some Good Books and Other Links</h2>
+
+<p>Some of these resources are for a specific language or platform, but the principles involved apply generally.</p>
+
+<p>Patterns of Enterprise Application Architecture <a rel="noreferrer nofollow" target="_blank" href="http://www.amazon.com/Patterns-Enterprise-Application-Architecture-Martin/dp/0321127420">http://www.amazon.com/Patterns-Enterprise-Application-Architecture-Martin/dp/0321127420</a></p>
+<p>Patterns, Principles, and Practices of Domain-Driven Design <a rel="noreferrer nofollow" target="_blank" href="http://www.amazon.com/Patterns-Principles-Practices-Domain-Driven-Design/dp/1118714709">http://www.amazon.com/Patterns-Principles-Practices-Domain-Driven-Design/dp/1118714709</a></p>
+<p>Adaptive Code via C# <a rel="noreferrer nofollow" target="_blank" href="http://www.amazon.com/Adaptive-Code-via-principles-Developer/dp/0735683204">http://www.amazon.com/Adaptive-Code-via-principles-Developer/dp/0735683204</a></p>
+<p>Pluralsight <a rel="noreferrer nofollow" target="_blank" href="https://www.pluralsight.com">https://www.pluralsight.com</a> - training videos by subscription</p>
+<p><a rel="noreferrer nofollow" target="_blank" href="http://stackoverflow.com">http://stackoverflow.com</a> - the best programming Q-and-A site</p>
+<p><a rel="noreferrer nofollow" target="_blank" href="https://www.youtube.com">https://www.youtube.com</a> - seriously, lots of smart people post good videos</p>
+
+<p>And don't trust any coders that tell you they never use Google.</p>
